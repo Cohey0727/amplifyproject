@@ -1,5 +1,5 @@
 import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
+import VueRouter, {RouteConfig} from "vue-router";
 import Home from "../views/Home.vue";
 import AI from "../views/AI.vue";
 import Chat from "../views/Chat.vue";
@@ -18,18 +18,17 @@ const routes: Array<RouteConfig> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: '/ai',
-    name: 'ai',
-    component: AI
+    path: "/ai",
+    name: "AI",
+    component: () => import(/* webpackChunkName: "about" */ "../views/AI.vue")
   },
   {
-    path: '/chat',
-    name: 'chat',
-    component: Chat
+    path: "/chat",
+    name: "Chat",
+    component: () => import(/* webpackChunkName: "about" */ "../views/Chat.vue")
   }
 ];
 
