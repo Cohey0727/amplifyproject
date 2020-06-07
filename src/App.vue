@@ -1,8 +1,11 @@
 <template>
   <div id="app">
+    <amplify-authenticator />
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/ai">AI</router-link> |
+      <router-link to="/chat">Chat</router-link>
     </div>
     <router-view />
   </div>
