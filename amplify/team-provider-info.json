@@ -14,6 +14,12 @@
         "categories": {
             "auth": {
                 "amplifyprojectd342259e": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1s3muiiqvd1j0",
+                    "type": "cicd"
+                }
             }
         }
     }
